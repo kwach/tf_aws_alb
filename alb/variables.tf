@@ -54,6 +54,11 @@ variable "health_check_path" {
   default     = "/"
 }
 
+variable "health_check_port" {
+  description = "The port of the health check or traffic-port by default"
+  default     = "traffic-port"
+}
+
 variable "log_bucket" {
   description = "S3 bucket for storing ALB access logs."
 }
